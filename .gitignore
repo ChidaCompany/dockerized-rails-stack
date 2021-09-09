@@ -1,64 +1,72 @@
-code/*.rbc
-code/capybara-*.html
-code/.rspec
-code/log/*
-code/tmp/*
-!code/log/.keep
-!code/tmp/.keep
-code/db/*.sqlite3
-code/db/*.sqlite3-journal
-code/public/assets
-code/public/system
-code/coverage/
-code/spec/tmp
-code/*.orig
-code/rerun.txt
-code/pickle-email-*.html
+*.rbc
+capybara-*.html
+.rspec
+/db/*.sqlite3
+/db/*.sqlite3-journal
+/db/*.sqlite3-[0-9]*
+/public/system
+/coverage/
+/spec/tmp
+*.orig
+rerun.txt
+pickle-email-*.html
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
 
 # TODO Comment out this rule if you are OK with secrets being uploaded to the repo
-code/config/initializers/secret_token.rb
-code/config/master.key
+config/initializers/secret_token.rb
+config/master.key
 
 # Only include if you have production secrets in this file, which is no longer a Rails default
 # config/secrets.yml
 
-# dotenv
-# TODO Comment out this rule if environment variables can be committed
-code/.env
+# dotenv, dotenv-rails
+# TODO Comment out these rules if environment variables can be committed
+.env
+.env.*
 
 ## Environment normalization:
-code/.bundle
-code/vendor/bundle
+/.bundle
+/vendor/bundle
 
 # these should all be checked in to normalize the environment:
 # Gemfile.lock, .ruby-version, .ruby-gemset
 
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
-code/.rvmrc
+.rvmrc
 
 # if using bower-rails ignore default bower_components path bower.json files
-code/vendor/assets/bower_components
-code/*.bowerrc
-code/bower.json
+/vendor/assets/bower_components
+*.bowerrc
+bower.json
 
 # Ignore pow environment settings
-code/.powenv
+.powenv
 
 # Ignore Byebug command history file.
-code/.byebug_history
+.byebug_history
 
 # Ignore node_modules
-code/node_modules/
+node_modules/
 
-# If using yarn, ignore errors file 
-code/yarn-error.log
+# Ignore db content
+pgdata/
+
+# Ignore precompiled javascript packs
+/public/packs
+/public/packs-test
+/public/assets
+
+# Ignore yarn files
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
 
 # Ignore uploaded files in development
-code/storage/*
-!code/storage/.keep
-
-# Ignore database related files
-pgdata
-
-# Ignore IDE generated files
-.idea
+/storage/*
+!/storage/.keep
+/public/uploads
