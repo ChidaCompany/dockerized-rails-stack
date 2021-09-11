@@ -5,7 +5,7 @@ This is just a basic dockerized general-purpose boilerplate rails app
 [![Code Size](https://img.shields.io/github/languages/code-size/chidacompany/dockerized-rails-stack)](https://github.com/ChidaCompany/dockerized-rails-stack/archive/refs/heads/master.zip)
 [![Last commit](https://img.shields.io/github/last-commit/ChidaCompany/dockerized-rails-stack)](https://github.com/ChidaCompany/dockerized-rails-stack/commits/master)
 
-[![Docker](https://img.shields.io/badge/container-docker-1291BD?logo=docker)]()
+[![Docker](https://img.shields.io/badge/container-docker-1291BD?logo=docker)](https://www.docker.com/)
 [![Ruby version](https://img.shields.io/badge/ruby-2.7.4-CC342D?logo=ruby)](https://www.ruby-lang.org/en/news/2021/07/07/ruby-2-7-4-released/)
 [![Rails version](https://img.shields.io/badge/rails-6.1.4-CC0200?logo=rubyonrails)](https://weblog.rubyonrails.org/2021/6/24/Rails-6-1-4-has-been-released/)
 [![React](https://img.shields.io/badge/frontend-react-61DAFB?logo=react)](https://github.com/facebook/react/blob/main/CHANGELOG.md#1702-march-22-2021)
