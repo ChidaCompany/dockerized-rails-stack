@@ -29,4 +29,4 @@ The test suite includes:
 * `shoulda_matchers`
 * `factory_bot_rails`
 
-To confirm that the test suite is working properly you can run `docker-compose run -e DRY_RUN=true web rspec --tag dry_run_example` it will run some simple specs using the gems listed above so you confirm that your environment is properly configured
+To confirm that the test suite is working properly you can run `docker-compose run web rspec --tag dry_run_example` it will run some simple specs using the gems listed above so you confirm that your environment is properly configured
