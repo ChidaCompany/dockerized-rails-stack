@@ -1,0 +1,19 @@
+name: Build and Test
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+jobs:
+  build_and_test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build
+        run:  docker-compose build
+      - name: Create Test DB
+        run: docker-compose run web rails db:create
+      - name: Run Tests
+        run: docker-compose run web rspec
