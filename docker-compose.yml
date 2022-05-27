@@ -13,7 +13,7 @@ services:
   web:
     build: .
     container_name: rails
-    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -b '0.0.0.0'"
+    command: rails s -b '0.0.0.0'
     volumes:
       - .:/myapp
     ports:
